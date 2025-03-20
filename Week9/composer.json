@@ -1,0 +1,46 @@
+{
+    "name": "week9/project",
+    "type": "library",
+    "description": "Client library for Google APIs",
+    "keywords": ["google"],
+    "homepage": "http://developers.google.com/api-client-library/php",
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=7.4",
+        "google/auth": "^1.27", 
+        "google/apiclient-services": "~0.250",
+        "firebase/php-jwt": "^5.2",
+        "monolog/monolog": "^2.3",
+        "phpseclib/phpseclib": "^2.0",
+        "guzzlehttp/guzzle": "^6.5",
+        "guzzlehttp/psr7": "^1.8"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "symfony/dom-crawler": "~2.1",
+        "symfony/css-selector": "~2.1",
+        "phpcompatibility/php-compatibility": "^9.0",
+        "composer/composer": "^1.10.23",
+        "phpspec/prophecy-phpunit": "^1.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "suggest": {
+        "cache/filesystem-adapter": "For caching certs and tokens (using Google\\Client::setCache)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Google\\": "src/"
+        },
+        "files": [
+            "src/aliases.php"
+        ],
+        "classmap": [
+            "src/aliases.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "2.x-dev"
+        }
+    }
+}
