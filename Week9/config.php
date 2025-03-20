@@ -18,10 +18,10 @@ require_once 'vendor/autoload.php';
 $google_client = new Google_Client();
 
 // Set the OAuth 2.0 Client ID
-$google_client->setClientId('google-client-id');
+$google_client->setClientId('207912375399-ahhqi406q5gd6j3pvsus82uqr2d59gjv.apps.googleusercontent.com');
 
 // Set the OAuth 2.0 Client Secret key
-$google_client->setClientSecret('client-secret-key');
+$google_client->setClientSecret('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');
 
 // Set the OAuth 2.0 Redirect URI
 $google_client->setRedirectUri('http://localhost/code/week9/profile.php');
